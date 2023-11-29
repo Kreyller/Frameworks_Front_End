@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Dito Lambari</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".receita-img").click(function(){
+                    var index = $(this).parent().index(); // Obtém o índice do clique
+                     var target = $(".receita-titulo").eq(index).find(".modo-preparo, .ingredientes");
+
+                    // Oculta todas as seções de modo de preparo e ingredientes
+                    $(".modo-preparo, .ingredientes").not(target).hide();
+
+                    // Se o alvo estiver visível, oculta-o; caso contrário, exibe-o
+                    if (target.is(":visible")) {
+                        target.slideUp("slow");
+                    } else {
+                        target.slideDown("slow");
+                    }
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                $("h1, #img, #receitas, #sobre, #contato, .receita-titulo").fadeIn(1999);
+            });
+        </script>
+
+
+    </head>   
+
+    <body>   
+        <div class="container" id="c">
+            <center> <h1 style="display: none; color: blue;">Receitas Dito Lambari</h1></center>
+            <nav id="menu">
+                <ul>
+                    <li class="list-inline-item" id="img" style="display: none;"><a href="index.html" title="Home"><img src="img/icone.ico"width="100" height="100"></a></li>
+                    <li class="list-inline-item" id="receitas" style="display: none;"><a href="receitas.html">Receitas</a></li>
+                    <li class="list-inline-item" id="sobre" style="display: none;"><a href="sobre.html">Sobre</a></li>
+                    <li class="list-inline-item" id="contato" style="display: none;"><a href="contato.html">Contato</a></li>
+
+                </ul>
+            </nav>
+
+            <center><div id="titulo">
+
+                <center><h1 style="display: none; color: rgba(40, 40, 201, 0.712);">Receitas do Dito</h1></center>
+
+            </div></center>
+
+            
+
+            <section class="main row" id="linha">
+                <!-- Receita 1 -->
+                <div class="col-md-3 receita-titulo" style="display: none;">
+                    <h3>Filé de Tilápia</h3>
+                    <p class="ingredientes" style="display: none;">
+                        <b>Ingredientes:</b>
+                        <br>
+                        2 filés de tilápia Minerva
+                        <br> 
+                        1/2 pimentão amarelo picado
+                        <br>
+                        1/2 pimentão vermelho picado
+                        <br>
+                        1 limão siciliano 
+                        <br>
+                        Salsinha a gosto
+                        <br>
+                        Azeite de oliva, Sal a gosto, Pimenta-do-reino preta moída a gosto
+                        <br>
+                        Farinha de trigo a gosto (opcional)
+                    </p>
+                    <p class="modo-preparo" style="display: none; text-align: justify;">
+                        Para começar, tempere com os filés de tilápia Minerva com sal, pimenta e metade do suco de limão. 
+                        Adicione um fio de azeite de oliva generoso à frigideira e leve para esquentar.
+                        <br>
+                        Quando o azeite estiver quente, adicione os filés de peixe e frite por cerca de 5 minutos de cada lado ou até dourar bem. 
+                        Se você tem dificuldades para não deixar o peixe grudar na frigideira, você pode passar um pouco de farinha de trigo de ambos os lados antes de levá-lo ao fogo. 
+                        <br>
+                        Retire os filés de peixe da frigideira e reserve. Agora leve os pimentões picados para refogar, lembrando de temperá-los com um pouco de sal e pimenta também.
+                        <br>
+                        Enquanto eles refogam na frigideira, adicione o restante do suco de limão. Assim que os legumes estiverem no ponto que você gosta, sirva com o peixe polvilhando salsinha picada. Bom apetite! 
+                    </p>
+                    <img class="rounded-circle receita-img" src="img/file_tilapia.jpg" width="200" height="200">
+                </div>
+        
+                <!-- Receita 2 -->
+                <div class="col-md-3 receita-titulo" style="display: none;">
+                    <h3>Pacu Assado</h3>
+                    <p class="ingredientes" style="display: none;">
+                        <b>Ingredientes:</b>
+                        <br>
+                        1 Pacu
+                        <br> 
+                        Óleo
+                        <br>
+                        Cebola
+                        <br>
+                        Alho 
+                        <br>
+                        Sal
+                        <br>
+                        Cebolinha verde
+                        <br>
+                        Coentro
+                        <br>
+                        Limão
+                        <br>
+                        1/2 copo de farinho de trigo
+                        <br>
+                        1/2 copo de fubá de milho
+                    </p>
+                    <p class="modo-preparo" style="display: none; text-align: justify;">
+                        Limpe o pacu com bastante limão, retalhe-o, tempere-o com alho, sal, limão coentro e cebolinha-verde. 
+                        Deixe nesse tempero por alguns minutos, virando-o de um lado para o outro. 
+                        Em seguida, encape-o com a mistura de fubá e farinha de trigo. 
+                        Unte uma assadeira com óleo e coloque o pacu, levando para assar, tomando o cuidade de colocar um pouco de óleo em cima do peixe, para ajudar a dourar. 
+                        Quando estiver dourado está pronto. Sirva quente, acompanhado de arroz e salada. 
+                        Obs.: para rechear o pacu, faça uma farofa de couve com manteiga ou de pimentão. 
+                        Coloque-a dentro do peixe e costure-o, antes de assar.
+                    </p>
+                    <img class="rounded-circle receita-img" src="img/pacu_assado.jpg" width="200" height="200">
+                </div>
+        
+                <!-- Receita 3 -->
+                <div class="col-md-3 receita-titulo" style="display: none;">
+                    <h3>Mojica de Pintado</h3>
+                    <p class="ingredientes" style="display: none;">
+                        <b>Ingredientes:</b>
+                        <br>
+                        1 kg de pintado
+                        <br> 
+                        1 dente de alho amassado
+                        <br>
+                        1 kg de mandioca
+                        <br>
+                        1 1/2 litro de água quente 
+                        <br>
+                        1 pimentão verde em cubos
+                        <br>
+                        2 tomates sem sementes em cubos
+                        <br>
+                        1 cebola picada
+                        <br>
+                        Cebolinha verde e coentro picado a gosto
+                        <br>
+                        pimenta-malagueta e sal a gosto
+                    </p>
+                    <p class="modo-preparo" style="display: none; text-align: justify;">
+                        Limpe o pintado, tirando as espinhas e a pele. Corte-o em cubos pequenos e tempere com alho e sal.
+                        Reserve. Descasque a mandioca e corte-a em cubos do mesmo tamanho do peixe. Em uma panela, adicione o pimentão,
+                        os tomates, a cebola, o coentro, o sal, a pimenta e a mandioca. Cubra com água quente, tampe e cozinhe por 15 min.
+                        Junte os cubos de peixe e cozinhe por mais 15 min. Sirva com pirão feito do caldo do peixe.
+                    </p>
+                    <img class="rounded-circle receita-img" src="img/mojica_pintado.jpg" width="200" height="200">
+                </div>
+        
+                <!-- Receita 4 -->
+                <div class="col-md-3 receita-titulo" style="display: none;">
+                    <h3>Salmão Grelhado</h3>
+                    <p class="ingredientes" style="display: none;">
+                        <b>Ingredientes:</b>
+                        <br>
+                        200 gr de salmão em postas
+                        <br> 
+                        1 dente de alho amassado
+                        <br>
+                        Sal e pimenta a gosto
+                        <br>
+                        1 colher (sopa) de manteiga 
+                        <br>
+                        <b>Molho:</b>
+                        <br>
+                        1 unidade de limão
+                        <br> 
+                        1 colher (sopa) de manteiga
+                        <br>
+                        1 colher (sopa) de salsinha picada
+                        <br>
+                        Sal e pimenta a gosto 
+                    </p>
+                    <p class="modo-preparo" style="display: none; text-align: justify;">
+                        Tempere os filés com o alho, o sal, e a pimenta, deixe descansar por 30 minutos.
+                        Coloque a manteiga em uma Frigideira Antiaderente Rochedo Rock in Rio 26cm e grelhe por 8 minutos em fogo médio.
+                        Vire com cuidado para não quebrar, e grelhe por mais 7 minutos aproximadamente.
+                        <br>
+                        <b>Molho:</b>
+                        Derreta a manteiga com a salsinha em fogo baixo.
+                        Adicione o suco do limão, mexendo vigorosamente, e deixe a mistura aquecer.
+                        Coloque os filés de salmão no prato a ser servido e regue com o molho de limão.
+                        Decore com folhas de salsinha.
+                    </p>
+                    <img class="rounded-circle receita-img" src="img/salmao_grelhado.jpg" width="200" height="200">
+                </div>
+            </section>
+
+            
+        </div>  
+    </body>     
+</html>

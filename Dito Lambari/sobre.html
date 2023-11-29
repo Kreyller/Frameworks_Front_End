@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Dito Lambari</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("h1, #banner, .texto-sobre, #img, #receitas, #sobre, #contato").fadeIn(1999);
+            });
+        </script>       
+
+    </head>   
+
+    <body>   
+        <div class="container" id="c">
+            <center> <h1 style="display: none; color: blue;">Dito Lambari</h1></center>
+            <nav id="menu">
+                <ul>
+                    <li class="list-inline-item" id="img" style="display: none;"><a href="index.html" title="Home"><img src="img/icone.ico"width="100" height="100"></a></li>
+                    <li class="list-inline-item" id="receitas" style="display: none;"><a href="receitas.html">Receitas</a></li>
+                    <li class="list-inline-item" id="sobre" style="display: none;"><a href="sobre.html">Sobre</a></li>
+                    <li class="list-inline-item" id="contato" style="display: none;"><a href="contato.html">Contato</a></li>
+
+                </ul>
+            </nav>
+            <center><h1 style="display: none; color: rgba(40, 40, 201, 0.712);">Um pouco sobre o Dito Lambari</h1></center>
+            
+            
+           <section class="main row" id="secao">
+               
+               <img  class=col-md-3 id="banner" style="display: none;" src="img/dito.jpg" width="300" height="200" align="left">
+               
+               <article class="col-md-9">
+                   <p class="texto-sobre" style="display: none; text-align: justify;">
+                    Dito Lambari é um renomado cozinheiro de mão cheia, está sempre trabalhando em novos pratos para inovar a cada dia, 
+                    pois seu lema é "O grande passo para o sucesso é sempre aprender algo novo".
+                    É inspirador ver nascer os mais delicados e saborosos pratos de 
+                    suas talentosas mãos. Sejam entradas, pratos principais ou sobremesas, 
+                    tudo leva o toque perfeito de tempero, tem textura e aroma sem iguais. 
+                    Ele traz a felicidade em forma de comida!
+                    Muitos conseguem cozinhar, mas poucos conseguem fazer arte com os alimentos.
+                    </p>
+               </article>               
+           </section>           
+        </div>
+        
+    </body>     
+</html>
